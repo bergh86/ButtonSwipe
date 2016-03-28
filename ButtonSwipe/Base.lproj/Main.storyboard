@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0a-7a-uRv">
+                                <rect key="frame" x="235" y="279" width="131" height="41"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.50588235290000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NNv-Sv-s8s"/>
+                                    <constraint firstAttribute="width" constant="130" id="aZK-rF-fDu"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NNv-Sv-s8s"/>
+                                        <exclude reference="aZK-rF-fDu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="136" y="280" width="130" height="40"/>
+                                    <mask key="constraints">
+                                        <include reference="NNv-Sv-s8s"/>
+                                        <include reference="aZK-rF-fDu"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Y0a-7a-uRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3M-5K-9Nn"/>
+                            <constraint firstItem="Y0a-7a-uRv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="waE-mH-ZqH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="f3M-5K-9Nn"/>
+                                <exclude reference="waE-mH-ZqH"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="f3M-5K-9Nn"/>
+                                <include reference="waE-mH-ZqH"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tXA-QI-deh" appends="YES" id="LDQ-fq-pmt"/>
+                            <outletCollection property="gestureRecognizers" destination="e9f-DX-YNu" appends="YES" id="GJd-Pd-Zdn"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Y0a-7a-uRv" id="xKf-vm-07f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="tXA-QI-deh">
+                    <connections>
+                        <action selector="displayGestureForSwipeRecognize:" destination="BYZ-38-t0r" id="AXY-2B-hBU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="e9f-DX-YNu">
+                    <connections>
+                        <action selector="displayGestureForSwipeRecognize:" destination="BYZ-38-t0r" id="jkN-b6-GLU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
